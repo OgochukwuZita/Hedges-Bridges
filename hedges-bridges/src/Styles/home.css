@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Anta&family=Funnel+Display:wght@300..800&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Anta&family=Funnel+Display:wght@300..800&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.hCarousel {
+    width: 100%;
+    height: 56vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5;
+    z-index: 999;
+    overflow: visible;
+}
+
+a {
+    text-decoration: none;
+}
+
+.details {
+    z-index: 999;
+    width: 550px;
+}
+
+.details h2 {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.slideButton,
+.MoreBtn {
+    visibility: visible;
+    width: 185px;
+    height: 64px;
+    margin: 20px auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a48d07;
+    color: #fdf4dc;
+    border-color: #a48d07;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.slideButton:hover {
+    background-color: #fece;
+    border-color: #fece;
+    color: #0D151C;
+}
+
+.touched {
+    opacity: 0.8;
+    background-color: #fece;
+    border-color: #fece;
+    color: #0D151C;
+}
+
+.navIcon {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    color: #fece;
+    z-index: 999;
+    transition: color 0.3s ease;
+}
+
+.rightIcon {
+    margin-right: 15px;
+}
+
+.navIcon:hover,
+.navIcon:active {
+    color: #a48d07;
+}
+
+.slides {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 30px 10px;
+
+}
+
+.slides::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #fdf4dc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #bca627;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background-color: #bca627;
+    transform: scale(1.2)
+}
+
+.band {
+    width: 100%;
+    height: 18vh;
+    padding: 15px 5px;
+    background-color: #090909;
+    color: #bca627;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fffe;
+    border-top: 2px solid #fffe;
+}
+
+.band h1 {
+    border-bottom: 2px solid #a48d07;
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.band p {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 47px 15px;
+    margin-bottom: 120px;
+}
+
+.card {
+    margin-top: 25px;
+    padding: 15px;
+    width: 270px;
+    height: 400px;
+    background-color: #0D151C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    color: #fece;
+    border-radius: 28px;
+}
+
+.card h2,
+p {
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.justiceStar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    margin-bottom: 18px;
+    font-size: 34px;
+    color: #a48d07;
+}
+
+.cardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 170px;
+    height: 64px;
+    padding: 8px;
+    background-color: #a48d07;
+    text-decoration: none;
+    color: #fdf4dc;
+    border-color: #a48d07;
+    border-radius: 12px;
+
+}
+
+.cardButton:hover,
+.cardButton:active {
+    background-color: #fdf4dc;
+    color: #0D151C;
+    border: 1px solid #fdf4dc;
+}
+
+.Intro {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 47px 15px 10px;
+    border-bottom: 1px solid #fdf4dc;
+    /* background-image:url('../assets/about3.jpg') ; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutLeft {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+
+.aboutLeft h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.MoreBtn {
+    visibility: visible;
+    width: 125px;
+    height: 64px;
+    margin: 28px auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a48d07;
+    border-color: #a48d07;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.MoreBtn a {
+    color: #fdf4dc;
+}
+
+.MoreBtn:hover,
+.MoreBtn:active {
+    background-color: #fece;
+    color: #090909;
+}
+
+.MoreBtn a:hover,
+.MoreBtn a:active {
+    color: #090909;
+}
+
+@media (max-width:970px) {
+    .Cards {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:620px) {
+    .slides {
+        padding: 5px 6px;
+    }
+
+    .details {
+        width: 300px;
+        text-align: center;
+    }
+
+    .hCarousel {
+        height: 68vh;
+    }
+
+    .Intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:425px) {
+    .navIcon {
+        display: none;
+    }
+
+    .slides {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:375px) {
+    .band p {
+        text-align: center;
+        padding-bottom: 8px;
+    }
+}
