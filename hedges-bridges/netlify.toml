@@ -1,4 +1,7 @@
 [build]
   base = "."
   publish = "dist"
-  command = "vite build"
+  command = "npm run build"
+
+  [context.production.environment]
+  NODE_VERSION = "22.11.0" 
