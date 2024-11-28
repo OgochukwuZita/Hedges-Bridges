@@ -4,7 +4,7 @@ import '../Styles/HeadSection.css'
 const Service = () => {
   return (
     <div>
-    <HeadSection description={'Our Services'}/>
+    <HeadSection title={'What We Offer?'} description={'Solutions tailored to your needs. Explore our range of services here.'}/>
     </div>
   )
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import '../Styles/HeadSection.css';
 
-const HeadSection = ({description}) => {
+const HeadSection = ({description,title}) => {
   return (
     <div className='HeadSection'>
-        <h1>{description}</h1>
+        <h1>{title}</h1>
+        <p>{description}</p>
         </div>
   )
 }

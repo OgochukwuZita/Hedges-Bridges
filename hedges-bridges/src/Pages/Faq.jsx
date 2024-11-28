@@ -1,8 +1,10 @@
 import React from 'react'
-
+import HeadSection from '../Components/HeadSection'
 const Faq = () => {
   return (
-    <div>Faq</div>
+    <div>
+      <HeadSection title={'Explore Frequently Asked Questions'}/>
+    </div>
   )
 }
 

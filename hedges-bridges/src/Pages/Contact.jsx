@@ -4,7 +4,7 @@ import '../Styles/HeadSection.css'
 const Contact = () => {
   return (
     <div>
-    <HeadSection description ={'Get in Touch'}/>
+    <HeadSection title ={'Get in Touch'} description={"Let’s start a conversation. We're always listening."}/>
     </div>
   )
 }

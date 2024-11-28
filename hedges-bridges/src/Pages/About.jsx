@@ -7,11 +7,11 @@ const About = () => {
     <div>
       <div>
         <div className='mainTitle'>
-        <HeadSection description={'About Hedges And Bridges Solicitors and Advocates'}/>
+        <HeadSection title={'About Hedges And Bridges Solicitors And Advocates'} description={'Driven by excellence, built on trust. Discover the principles behind our success.'}/>
 
         </div>
     <div className='altTitle'>
-    <HeadSection description={'About Us'} />
+    <HeadSection title={'About Us'} description={'Discover the principles behind our success.'}/>
     </div>
     </div>
     </div>

@@ -1,13 +1,15 @@
 .HeadSection{
     width: 100%;
-    height: 43vh;
+    height: 33vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px 5px;
     border-bottom: 1px solid #ffe;
     text-wrap: wrap;
 }
+
 @media (max-width:850px) {
     .HeadSection{
         text-align: center;
