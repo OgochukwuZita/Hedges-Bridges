@@ -1,0 +1,12 @@
+.altTitle{
+    display:none;
+}
+
+@media (max-width:800px) {
+    .altTitle{
+        display: block;
+    }
+    .mainTitle{
+        display: none;
+    }
+}

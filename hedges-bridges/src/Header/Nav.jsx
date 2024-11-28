@@ -20,13 +20,13 @@ const Nav = () => {
       <ul className={isMenuOpen ? 'navbar-links active' : 'navbar-links'}>
         <hr className='divider' />
         <li><NavLink to='/Home' onClick={toggleMenu}>Home</NavLink></li>
-        <hr />
+        <hr className='divider' />
         <li><NavLink to='/About' onClick={toggleMenu}>About</NavLink></li>
-        <hr />
+        <hr className='divider' />
         <li><NavLink to='/Service' onClick={toggleMenu}>Our Service</NavLink></li>
-        <hr />
+        <hr className='divider' />
         <li><NavLink to='/Contact' onClick={toggleMenu}>Contact</NavLink> </li>
-        <hr />
+        <hr className='divider' />
         <div className='navlink-search'>
           <li ><NavLink to='/Search'><FaSearch /></NavLink> </li>
         </div>
