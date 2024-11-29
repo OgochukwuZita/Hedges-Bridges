@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/home.css';
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
 import slide1 from '../assets/slide1.jpg';
 import slide2 from '../assets/slide2.jpg';
@@ -15,7 +15,7 @@ const Slides = [
     content: 'A team of experienced legal professionals, dedicated to providing personalized guidance and support for all your legal needs.Trust in expertise that’s accessible, efficient, and always within reach.',
     imageUrl: slide1,
     buttonText: 'Learn more',
-    buttonLink: '../Pages/About.jsx'
+    buttonLink: '/About'
   },
 
   {
@@ -24,7 +24,7 @@ const Slides = [
     content: "We provide dependable legal support wherever you need it. From contract negotiations to compliance, our expertise safeguards your company's interests with tailored, effective legal solutions for the unique challenges of the corporate world.",
     imageUrl: slide2,
     buttonText: 'Find a lawyer',
-    buttonLink: '../Pages/Contact.jsx'
+    buttonLink: '/Contact'
   },
 
   {
@@ -33,7 +33,7 @@ const Slides = [
     content: 'We equip you with the knowledge and support needed to make informed legal decisions for your business.Our mission is to navigate complexities, ensuring you feel empowered and secure at every step.',
     imageUrl: slide3,
     buttonText: 'Explore FAQs',
-    buttonLink: '../Pages/Faq.jsx'
+    buttonLink: '/Faq'
   }
 ]
 
@@ -74,7 +74,7 @@ function Carousel() {
             <p>{Slides[currentSlide].content}</p>
           </div>
 
-          <button className='slideButton' onClick={() => navigate(Slides[currentSlide].buttonLink)} onTouchStart={(e) => e.target.classList.add('touched')} onTouchEnd={(e) => e.target.classList.remove('touched')}> {Slides[currentSlide].buttonText}</button>
+          <button  onClick={() => navigate(Slides[currentSlide].buttonLink)} onTouchStart={(e) => e.target.classList.add('touched')} onTouchEnd={(e) => e.target.classList.remove('touched')} className='slideButton'> {Slides[currentSlide].buttonText}</button>
 
           {/*pagination section */}
           <div className='pagination'>

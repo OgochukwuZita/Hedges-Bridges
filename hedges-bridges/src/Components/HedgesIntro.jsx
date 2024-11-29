@@ -12,7 +12,7 @@ const HedgesIntro = () => {
         <p>Based in Lagos, Nigeria, our firm is built on a foundation of trust, integrity, and professionalism, offering innovative legal solutions across diverse practice areas.</p>
       </div>
       <div className='MoreBtn'>
-        <NavLink to="/About.jsx" onTouchStart={(e) => e.target.classList.add('touched')} onTouchEnd={(e) => e.target.classList.add('touched')}>More</NavLink>
+        <NavLink to="/About" onTouchStart={(e) => e.target.classList.add('touched')} onTouchEnd={(e) => e.target.classList.add('touched')}>More</NavLink>
       </div>
 
     </div>
