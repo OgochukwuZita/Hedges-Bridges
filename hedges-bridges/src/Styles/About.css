@@ -1,42 +1,55 @@
-a{
+a {
     text-decoration: none;
     color: #fece;
 }
-.altTitle{
-    display:none;
+
+.altTitle {
+    display: none;
 }
 
-.aboutContent{
+.aboutContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 12px 25px;
     width: fit-content;
-} 
-.aboutContent h2{
+}
+
+.aboutContent h2 {
     display: flex;
     justify-content: center;
     padding-top: 35px;
     padding-bottom: 25px;
-} 
-.aboutContent p{
+}
+
+.aboutContent p {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.aboutContent ul li{
+
+.aboutContent ul li {
     padding-top: 18px;
     padding-bottom: 14px;
-    list-style-type: disc ;
+    list-style-type: disc;
 }
-.aboutContent ul li::marker{
+
+.underlined {
+    display: inline-block;
+    border-bottom: 5px solid #a48d07;
+    padding-bottom: 5px;
+}
+
+.aboutContent ul li::marker {
     font-size: 30px;
     color: #a48d07;
 }
-.last{
+
+.last {
     padding-bottom: 22px;
 }
-.exploreCards{
+
+.exploreCards {
     width: 680px;
     height: 83px;
     background-color: #0D151C;
@@ -44,21 +57,22 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-}  
+}
 
-.pointers{
+.pointers {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 33px;
     justify-content: center;
     align-items: center;
-    padding:47px 15px;
+    padding: 47px 15px;
     margin-bottom: 120px;
 }
-.arrowRight{
+
+.arrowRight {
     font-size: 24px;
-    color:#fece;
+    color: #fece;
     width: 40px;
     height: 45px;
     margin-left: 15px;
@@ -68,35 +82,39 @@ a{
 }
 
 @media (max-width:970px) {
-    .pointers{
+    .pointers {
         margin-bottom: 0;
     }
 }
 
 @media (max-width:800px) {
-    .exploreCards{
+    .exploreCards {
         width: 440px;
     }
-    .altTitle{
+
+    .altTitle {
         display: block;
     }
-    .mainTitle{
+
+    .mainTitle {
         display: none;
     }
-} 
+}
 
 @media (max-width:680px) {
-    .exploreCards{
+    .exploreCards {
         width: 340px;
     }
 }
+
 @media (max-width:450px) {
-    .exploreCards{
+    .exploreCards {
         width: 320px;
     }
 }
+
 @media (max-width:320px) {
-    .exploreCards{
+    .exploreCards {
         width: 280px;
     }
 }
