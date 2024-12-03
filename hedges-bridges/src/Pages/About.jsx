@@ -39,8 +39,18 @@ const About = () => {
         </div>
         <Band/>
         <div className='pointers'>
+          <div className='mainTitle'>
           <Pointers title={'Explore Frequently Asked Questions'} to={'/Faq'}/>
+          </div>
+          <div className='altTitle'>
+          <Pointers title={'Explore FAQs'} to={'/Faq'}/>
+          </div>
+          <div className='mainTitle'>
           <Pointers title={'Explore Client Reviews'} to={'/Testimonials'}/>
+          </div>
+          <div className='altTitle'>
+          <Pointers title={'Explore Reviews'} to={'/Testimonials'}/>
+          </div>
         </div>
     </div>    
     </div>

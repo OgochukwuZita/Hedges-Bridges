@@ -33,15 +33,19 @@ a{
     font-size: 30px;
     color: #a48d07;
 }
+.last{
+    padding-bottom: 22px;
+}
 .exploreCards{
-    width: 68%;
+    width: 680px;
     height: 83px;
     background-color: #0D151C;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-}   
+}  
+
 .pointers{
     width: 100%;
     display: flex;
@@ -50,20 +54,29 @@ a{
     justify-content: center;
     align-items: center;
     padding:47px 15px;
+    margin-bottom: 120px;
 }
 .arrowRight{
     font-size: 24px;
-    color:#000000;
-    background-color: #a48d07;
-    width: 45px;
+    color:#fece;
+    width: 40px;
     height: 45px;
     margin-left: 15px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width:970px) {
+    .pointers{
+        margin-bottom: 0;
+    }
+}
+
 @media (max-width:800px) {
+    .exploreCards{
+        width: 440px;
+    }
     .altTitle{
         display: block;
     }
@@ -71,3 +84,19 @@ a{
         display: none;
     }
 } 
+
+@media (max-width:680px) {
+    .exploreCards{
+        width: 340px;
+    }
+}
+@media (max-width:450px) {
+    .exploreCards{
+        width: 320px;
+    }
+}
+@media (max-width:320px) {
+    .exploreCards{
+        width: 280px;
+    }
+}
