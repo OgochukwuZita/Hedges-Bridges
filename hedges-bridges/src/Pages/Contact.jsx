@@ -4,6 +4,7 @@ import Office from '../Components/Office'
 import '../Styles/HeadSection.css'
 import '../Styles/Contact.css'
 import GoogleMap from '../Components/GoogleMap'
+import ContactForm from '../Components/ContactForm'
 const Contact = () => {
   return (
     <div className='content'>
@@ -11,10 +12,12 @@ const Contact = () => {
     <div className='officeContent'>
     <Office/>
     <GoogleMap/>
-
     </div>
     <div className='innerContainer'>
-
+      <div className='form'>
+      <h2><span className='underlined'>Start a Conversation...</span></h2>
+      <ContactForm/>
+      </div>
     </div>
     </div>
   )

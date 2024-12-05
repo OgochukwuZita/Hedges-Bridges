@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 2.5;
 }
 .officeContent{
     padding: 12px 25px;
@@ -18,8 +19,96 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0 ;
     border: 1px solid #fece;
     border-radius: 15px;
     overflow: hidden;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underlined{
+    display: inline-block;
+    justify-content: center;
+    padding-top: 25px;
+    padding-right: 5px;
+    border-bottom: 5px solid #a48d07;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contactForm label{
+    padding-top: 25px;
+}
+
+.contactForm input, textarea{
+    width: 600px;
+    height: 56px;
+    background-color: #0D151C;
+    border: 1px solid #887a2b;
+    border-radius: 15px;
+    color: #fece;
+    padding-left: 16px;
+}
+
+.formField textarea{
+    height: 120px;
+}
+.contactForm label{
+    margin-left: 22px;
+    color: #fece;
+}
+.contactForm input::placeholder{
+    padding-left: 16px;
+    color: #887a2b;
+}
+.contactForm input:active{
+    background-color: #0D151C;
+    border: 1px solid #887a2b;
+}
+.formField{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btnContainer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnContainer button{
+    width: 125px;
+    height: 64px;
+    background-color: #a48d07;
+    border-color: #a48d07;
+    border-radius: 8px;
+    color: #fece;
+
+}
+.successMsg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #a48d07;
+}
+
+
+
+@media (max-width:450px) {
+    .office{
+        width:300px;
+    }
+}
+
+
+@media (max-width:650px) {
+    .contactForm input{
+        width: 450px;
+    }
 }
