@@ -1,13 +1,21 @@
 import React from 'react'
+import { useRef } from 'react'
 import {useForm, ValidationError} from '@formspree/react'
 
 const ContactForm = () => {
-    const [state, handleSubmit] = useForm('xjkvzykj')
+    const [state, handleSubmit] = useForm('xjkvzykj');
+
+    const formRef = useRef(null);
+
+
+    if(state.succeeded && formRef.current){
+          formRef.current.reset();
+    }
   return (
 
     <div className='contactForm'>
-        {state.succeeded && <p className='successMsg'>Thanks for Your Message, we will respond shortly.</p>}
-        <form onSubmit={handleSubmit}>
+        {state.succeeded && <p className='successMsg'>Thanks for your message, we will respond shortly.</p>}
+        <form ref={formRef} onSubmit={handleSubmit}>
             <div className='formField'>
             <label htmlFor="Name"> Name: </label>
             <input type="text" name="Name" id="Name" placeholder='Enter Your Name' required/>
