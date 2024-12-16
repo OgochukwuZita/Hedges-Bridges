@@ -6,6 +6,8 @@ import Contact from "./Pages/Contact";
 import Search from "./Pages/Search";
 import Faq from "./Pages/Faq";
 import Testimonials from "./Pages/Testimonials";
+import Properties from "./Pages/Properties";
+import Publications from "./Pages/Publications";
 import './Styles/pages.css'
 import Footer from "./Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -25,6 +27,8 @@ function App() {
                         <Route path='/Search' element={<Search />} />
                         <Route path='/Faq' element={<Faq />} />
                         <Route path='/Testimonials' element={<Testimonials />} />
+                        <Route path='/Publications' element={<Publications/>}/>
+                        <Route path='/Properties' element={<Properties/>}/>
                     </Routes>
                 </main>
                 <Footer />

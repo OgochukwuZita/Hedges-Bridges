@@ -89,7 +89,7 @@ li a {
     display: none;
 }
 
-@media(max-width: 970px) {
+@media(max-width: 1026px) {
     .footer {
         position: relative;
         display: flex;

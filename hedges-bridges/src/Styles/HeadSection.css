@@ -8,6 +8,10 @@
     padding: 15px 5px;
     border-bottom: 1px solid #ffe;
     text-wrap: wrap;
+    background-image: url('../assets/headSection.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 @media (max-width:850px) {

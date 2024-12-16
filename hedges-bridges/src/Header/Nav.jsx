@@ -27,6 +27,10 @@ const Nav = () => {
         <hr className='divider' />
         <li><NavLink to='/Contact' onClick={toggleMenu}>Contact</NavLink> </li>
         <hr className='divider' />
+        <li><NavLink to='/Properties' onClick={toggleMenu}>Properties</NavLink></li>
+        <hr className='divider' />
+        <li><NavLink to = '/Publications' onClick={toggleMenu}>Publications</NavLink></li>
+        <hr className='divider' />
         <div className='navlink-search'>
           <li ><NavLink to='/Search'><FaSearch /></NavLink> </li>
         </div>
