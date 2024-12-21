@@ -36,7 +36,7 @@
     padding-right: 5px;
     border-bottom: 5px solid #a48d07;
 }
-.contactForm{
+.contactForm, reviewForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,8 +45,11 @@
 .contactForm label{
     padding-top: 25px;
 }
+.revForm label, select{
+    margin-top:25px;
+}
 
-.contactForm input, textarea{
+.contactForm input, textarea, .revForm textarea{
     width: 600px;
     height: 56px;
     background-color: #0D151C;
@@ -56,19 +59,31 @@
     padding-left: 16px;
 }
 
+.revForm select{
+    width:280px;
+    background-color:#0D151C;
+    height:56px;
+    padding-left:16px;
+    border: 1px solid #887a2b;
+    border-radius:15px;
+    color:#887a2b;
+}
+.charCount{
+    padding-left:12px;
+}
 .formField textarea{
     height: 120px;
     padding-top: 8px;
 }
-.contactForm label{
+.contactForm label, .revForm label{
     margin-left: 22px;
     color: #fece;
 }
-.contactForm input::placeholder{
+.contactForm input::placeholder, .revForm textarea::placeholder{
     padding-left: 16px;
     color: #887a2b;
 }
-.contactForm input:active{
+.contactForm input:active, .revForm select:active{
     background-color: #0D151C;
     border: 1px solid #887a2b;
 }
@@ -97,6 +112,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 18px;
     color: #a48d07;
 }
 
@@ -110,13 +126,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    padding-bottom:200px;
 }
+
 @media (max-width:425px) {
-    .contactForm .formField input{
+    .contactForm .formField input, .revForm .formField select{
         width:285px
     }
 
-    .contactForm .formField textarea{
+    .contactForm .formField textarea, .revForm .formField textarea{
         width: 285px;
     }
 }
@@ -131,11 +149,20 @@
 
 
 @media (max-width:680px) {
-    .contactForm input{
+    .contactForm input, .revForm select{
         width: 380px;
     }
     
-    .formField textarea{
+    .formField textarea, .revForm textarea{
         width: 380px;
     }
+
+    
+}
+
+@media (max-width:1024px){
+    .revForm{
+        padding-bottom:0;
+    }
+
 }

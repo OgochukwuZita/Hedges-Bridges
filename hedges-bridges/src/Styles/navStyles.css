@@ -72,6 +72,7 @@
 
 
 @media(max-width: 1026px) {
+    
     .navbar-links {
         display: none;
         flex-direction: column;
@@ -85,11 +86,12 @@
     }
 
     .navbar-links li {
-        padding: 8px ;
+        padding: 5px ;
     }
-
+ 
     .navbar-links.active {
         display: flex;
+        
     }
 
     .Menu {
@@ -112,6 +114,6 @@
 
     .divider {
         display: block;
-        margin-top: 25px;
+        margin: 12px 0;
     }
 }

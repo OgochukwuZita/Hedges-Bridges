@@ -35,6 +35,7 @@ const Nav = () => {
           <li ><NavLink to='/Search'><FaSearch /></NavLink> </li>
         </div>
         <li className='search-sm' ><NavLink to='/Search' onClick={toggleMenu}>Search</NavLink> </li>
+
       </ul>
     </nav>
   )

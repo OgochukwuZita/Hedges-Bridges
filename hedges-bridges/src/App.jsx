@@ -8,6 +8,8 @@ import Faq from "./Pages/Faq";
 import Testimonials from "./Pages/Testimonials";
 import Properties from "./Pages/Properties";
 import Publications from "./Pages/Publications";
+import Login from "./Pages/Login";
+import Admin from "./Pages/Admin";
 import './Styles/pages.css'
 import Footer from "./Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -29,6 +31,8 @@ function App() {
                         <Route path='/Testimonials' element={<Testimonials />} />
                         <Route path='/Publications' element={<Publications/>}/>
                         <Route path='/Properties' element={<Properties/>}/>
+                        <Route path='/Login' element={<Login/>}/>
+                        <Route path='/Admin' element={<Admin/>}/>
                     </Routes>
                 </main>
                 <Footer />
