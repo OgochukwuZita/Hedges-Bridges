@@ -84,62 +84,62 @@
   export const stillWatersFAQs = [
     {
       id: 1,
-        question: "What sets Still Waters apart from other law firms?",
+        question: "What sets Still Waters apart from other law firms ?",
         answer: "Our commitment to excellence, client-centered approach, and dedication to innovative solutions distinguish us. We prioritize understanding your needs and delivering results that exceed expectations."
     },
     {
       id: 2,
-        question: "Can I access your services remotely?",
+        question: "Can I access your services remotely ?",
         answer: "Yes, we offer remote consultations and legal services to accommodate clients unable to visit our office in person. Our team is equipped to work seamlessly through virtual platforms."
     },
     {
       id: 3,
-        question: "How long does it take to resolve a case?",
+        question: "How long does it take to resolve a case ?",
         answer: "The duration depends on the complexity and nature of the case. Our team ensures efficient handling while maintaining the highest standards of diligence."
     },
     {
       id: 4,
-        question: "What are your payment terms?",
+        question: "What are your payment terms ?",
         answer: "We offer flexible payment terms tailored to each client’s specific needs. Detailed information will be provided during your consultation."
     },
     {
       id: 5,
-        question: "Do you provide pro bono services?",
+        question: "Do you provide pro bono services ?",
         answer: "Yes, we believe in giving back to the community and occasionally offer pro bono legal services to individuals or organizations in need."
     },
     {
       id: 6,
-        question: "What should I bring to my first consultation?",
+        question: "What should I bring to my first consultation ?",
         answer: "Please bring any relevant documents, such as contracts, agreements, or court notices, along with a clear outline of your concerns or goals. This helps us better understand and address your needs."
     },
     {
       id: 7,
-        question: "How does Still Waters support startups and entrepreneurs?",
+        question: "How does Still Waters support startups and entrepreneurs ?",
         answer: "We provide tailored legal services for startups, including business registration, intellectual property protection, and guidance on compliance and funding agreements."
     },
     {
         id: 8,
-        question: "Do you handle family law cases?",
+        question: "Do you handle family law cases ?",
         answer: "Yes, we provide compassionate and confidential services in family law, including divorce, child custody, spousal support, and prenuptial agreements."
     },
     {
       id: 9,
-        question: "Can you assist with employment law issues?",
+        question: "Can you assist with employment law issues ?",
         answer: "Absolutely. We advise employers and employees on labor laws, workplace policies, dispute resolution, and contract negotiations."
     },
     {
         id: 10,
-        question: "How can I stay updated on the progress of my case?",
+        question: "How can I stay updated on the progress of my case ?",
         answer: "We ensure transparent communication and provide regular updates through email, phone calls, or in-person meetings, based on your preference."
     },
     {
         id: 11,
-        question: "Do you offer training or workshops on legal matters?",
+        question: "Do you offer training or workshops on legal matters ?",
         answer: "Yes, we organize training sessions and workshops for businesses and organizations on topics such as corporate compliance, workplace policies, and intellectual property management."
     },
     {
         id: 12,
-        question: "What languages do your attorneys speak?",
+        question: "What languages do your attorneys speak ?",
         answer: "Our attorneys are proficient in English and also have fluency in local Nigerian languages, ensuring effective communication with diverse clients."
     }
 ];

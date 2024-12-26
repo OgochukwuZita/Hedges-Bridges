@@ -48,6 +48,15 @@
     color:#a48d07;
 }
 
+.BreakIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    font-size: 34px;
+    color: #a48d07;
+}
 @media (max-width:800px) {
     .accordionTitle{
         width: 420px;
