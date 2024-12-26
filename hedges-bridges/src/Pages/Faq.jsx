@@ -12,7 +12,7 @@ const Faq = () => {
       <Band/>
       <Accordion data={stillWatersFAQs} titleKey='question' contentKey='answer'/>
       <div className='pointers'>
-      <Pointers title ={'Explore Our Services'} to={'/Faq'}/>
+      <Pointers title ={'Explore Our Services'} to={'/Service'}/>
       <Pointers title={'Explore Client Reviews'} to={'/Review'}/>
       </div>
 
