@@ -144,3 +144,31 @@
     }
 ];
 
+const publications = [
+  {
+    id: 1,
+    title: "The Evolution of Nigerian Corporate Law",
+    introduction: "A look at how corporate law has shaped business practices in Nigeria.",
+    article: "Corporate law in Nigeria has evolved significantly over the past century...",
+    author: "John Doe",
+    date: "2024-12-10",
+  },
+  {
+    id: 2,
+    title: "Navigating Property Disputes",
+    introduction: "Practical steps to resolving common property disputes.",
+    article: "Property disputes are a common issue faced by many individuals and businesses...",
+    author: "Jane Smith",
+    date: "2024-11-22",
+  },
+  {
+    id: 3,
+    title: "Employment Law Reforms in Africa",
+    introduction: "Understanding the impact of recent reforms on employees and employers.",
+    article: "Employment law reforms have brought significant changes across Africa...",
+    author: "Samuel Johnson",
+    date: "2024-11-10",
+  },
+  
+];
+export default publications;
