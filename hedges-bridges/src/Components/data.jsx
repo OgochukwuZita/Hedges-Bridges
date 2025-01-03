@@ -169,6 +169,94 @@ const publications = [
     author: "Samuel Johnson",
     date: "2024-11-10",
   },
+  {
+    id: 4,
+    title: "Navigating Property Disputes",
+    introduction: "Practical steps to resolving common property disputes.",
+    article: "Property disputes are a common issue faced by many individuals and businesses...",
+    author: "Jane Smith",
+    date: "2024-11-22",
+  },
+
+  {
+    id: 5,
+    title: "Employment Law Reforms in Africa",
+    introduction: "Understanding the impact of recent reforms on employees and employers.",
+    article: "Employment law reforms have brought significant changes across Africa...",
+    author: "Samuel Johnson",
+    date: "2024-11-10",
+  },
+  {
+    id: 6,
+    title: "Navigating Property Disputes",
+    introduction: "Practical steps to resolving common property disputes.",
+    article: "Property disputes are a common issue faced by many individuals and businesses...",
+    author: "Jane Smith",
+    date: "2024-11-22",
+  },
+
+  {
+    id: 7,
+    title: "Employment Law Reforms in Africa",
+    introduction: "Understanding the impact of recent reforms on employees and employers.",
+    article: "Employment law reforms have brought significant changes across Africa...",
+    author: "Samuel Johnson",
+    date: "2024-11-10",
+  },
+
+  {
+    id: 8,
+    title: "Navigating Property Disputes",
+    introduction: "Practical steps to resolving common property disputes.",
+    article: "Property disputes are a common issue faced by many individuals and businesses...",
+    author: "Jane Smith",
+    date: "2024-11-22",
+  },
+
+  {
+    id: 9,
+    title: "Employment Law Reforms in Africa",
+    introduction: "Understanding the impact of recent reforms on employees and employers.",
+    article: "Employment law reforms have brought significant changes across Africa...",
+    author: "Samuel Johnson",
+    date: "2024-11-10",
+  },
+
+  {
   
+  id: 10,
+  title: "Navigating Property Disputes",
+  introduction: "Practical steps to resolving common property disputes.",
+  article: "Property disputes are a common issue faced by many individuals and businesses...",
+  author: "Jane Smith",
+  date: "2024-11-22",
+},
+
+{
+  id: 11,
+  title: "Employment Law Reforms in Africa",
+  introduction: "Understanding the impact of recent reforms on employees and employers.",
+  article: "Employment law reforms have brought significant changes across Africa...",
+  author: "Samuel Johnson",
+  date: "2024-11-10",
+},
+
+{
+  id: 12,
+  title: "Navigating Property Disputes",
+  introduction: "Practical steps to resolving common property disputes.",
+  article: "Property disputes are a common issue faced by many individuals and businesses...",
+  author: "Jane Smith",
+  date: "2024-11-22",
+},
+
+{
+  id: 13,
+  title: "Employment Law Reforms in Africa",
+  introduction: "Understanding the impact of recent reforms on employees and employers.",
+  article: "Employment law reforms have brought significant changes across Africa...",
+  author: "Samuel Johnson",
+  date: "2024-11-10",
+},
 ];
 export default publications;

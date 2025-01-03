@@ -10,6 +10,7 @@ import Properties from "./Pages/Properties";
 import Publications from "./Pages/Publications";
 import Login from "./Pages/Login";
 import Admin from "./Pages/Admin";
+import Archive from "./Pages/Archive"
 import './Styles/pages.css'
 import Footer from "./Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -33,6 +34,7 @@ function App() {
                         <Route path='/Properties' element={<Properties/>}/>
                         <Route path='/Login' element={<Login/>}/>
                         <Route path='/Admin' element={<Admin/>}/>
+                        <Route path='/Archive' element={<Archive/>}/>
                     </Routes>
                 </main>
                 <Footer />
