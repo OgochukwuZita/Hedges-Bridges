@@ -12,22 +12,74 @@
 .pubCard{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
-    flex-wrap: wrap;
     width: 600px;
-    height: 320px;
-    background-color: #0D151C;
+    height: fit-content;
+    /* background-color: #0D151C; */
+    background-image: url('../assets/pubImage.jpg');
+    /* background-position: center; */
+    background-size: cover;
     border: 1 px solid #0D151C;
     border-radius: 8px;
-    padding: 16px 22px;
+    padding: 0px 22px;
+    box-sizing: border-box;
 }
-.left{
-    display: flex;
-    width: 45%;
-}
-.right{
+
+.introCard{
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 100%;
+    position: relative;
+}
+.Title{
+    padding-top: 25px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+   
+}
+.details{
+    display: flexbox;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    position: absolute;
+    left:0px;
+}
+.MoreBtn:hover{
+    border: 1px solid #efce;
+}
+
+@media (max-width:640px) {
+    .pubCard{
+        width: 520px;
+    }
+}
+@media (max-width:560px) {
+    .pubCard{
+        width: 480px;
+    }
+}
+@media(max-width:500px){
+    .pubCard{
+        width:420px;
+    }
+}
+@media(max-width:450px){
+    .pubCard{
+        width: 380px;
+    }
+}
+@media(max-width:400px){
+    .pubCard{
+        width:310px;
+    }
+}
+@media (max-width:320px) {
+    .pubCard{
+        width: 280px;
+    }
 }
