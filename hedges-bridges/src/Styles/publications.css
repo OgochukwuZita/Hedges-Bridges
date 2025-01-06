@@ -75,6 +75,20 @@
     /* background-color: #0D151C; */
     position: relative;
 }
+
+.BackBtn{
+    width: 120px;
+    background-color: #0D151C;
+    color: #efce;
+    border: 1px solid #0D151C;
+    border-radius: 8px;
+    padding: 18px;
+    margin-top: 12px;
+}
+.BackBtn:hover{
+    border: 1px solid #a48d07;
+    background-color: #a48d07;
+}
 article{
     padding: 20px 65px;
     text-align: justify;
@@ -118,7 +132,9 @@ article p{
     .pubCard{
         width:420px;
     }
-    
+    article{
+        padding: 20px 25px;
+    }
 }
 @media(max-width:450px){
     .pubCard{
