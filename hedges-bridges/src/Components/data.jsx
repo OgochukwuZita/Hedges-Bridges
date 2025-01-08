@@ -81,7 +81,7 @@
     }
   ];
 
-  export const stillWatersFAQs = [
+  export const HedgesBridgesFAQs = [
     {
       id: 1,
         question: "What sets Still Waters apart from other law firms ?",
@@ -148,7 +148,7 @@ const publications = [
   {
     id: 1,
     title: "The Evolution of Nigerian Corporate Law",
-    introduction: "A look at how corporate law has shaped business practices in Nigeria.",
+    introduction: "A look at how corporate law has shaped business practices in Nigeria.A look at how corporate law has shaped business practices in Nigeria.A look at how corporate law has shaped business practices in Nigeria.",
     article: "Corporate law in Nigeria has evolved significantly over the past century...",
     author: "John Doe",
     date: "2024-12-10",
@@ -259,4 +259,5 @@ const publications = [
   date: "2024-11-10",
 },
 ];
+
 export default publications;
