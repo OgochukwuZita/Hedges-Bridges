@@ -39,23 +39,38 @@
     padding: 8px 22px;
     overflow: hidden;
 }
-.Title{
+
+.Title {
     padding-top: 25px;
-    padding-bottom: 18px;
+    margin-bottom: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     text-align: center;
+    width: 180px;
+    height: 86px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
    
 }
 .Title, .pubContent p{
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 
 }
+
+.pubContent p{
+    width: 280px;
+    height: 62px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .details{
     display: flex;
     flex-direction: column;
@@ -69,6 +84,8 @@
     text-wrap: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 22px;
 }
 .date{
     display: flex;
@@ -79,6 +96,7 @@
     font-size: 1.25rem;
     color: #a48d07;
 }
+
 .MoreBtn:hover{
     border: 1px solid #efce;
 }
@@ -119,7 +137,7 @@ article{
 
 article h1{
     font-size: 1.6rem;
-    padding-top: 65px;
+    padding-top: 96px;
     padding-bottom: 28px;
     display: flex;
     justify-content: center;
@@ -142,6 +160,18 @@ article p{
 
 .pointerContainer{
     margin-top: 18px;
+}
+
+.pubImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 68px;
+    object-fit: cover;
+    border-radius: 12px;
+
 }
 
 @media (max-width:640px) {
@@ -177,6 +207,10 @@ article p{
     .details{
         padding-bottom: 18px;
     }
+    /* .pubImage{
+        width: 298px;
+        height: 298px;
+    } */
 }
 @media (max-width:320px) {
     .pubCard{

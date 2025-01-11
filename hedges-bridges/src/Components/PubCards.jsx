@@ -4,8 +4,10 @@ import BreakIcon from '../Components/BreakIcon';
 import { SlCalender } from "react-icons/sl";
 import publications from '../Components/data'
 import Pointers from '../Components/Pointers';
+import defaultImage from '../assets/slide1.jpg'
 
 const PubCards = () => {
+
   const [selectedPublication, setSelectedPublication] = useState(null);
 
   const sortedPublications = [...publications].sort(
@@ -25,6 +27,7 @@ const PubCards = () => {
             <li>Written By: <strong>{selectedPublication.author}</strong></li>
           </ul>
           <article>
+            <img src={selectedPublication.img || defaultImage }  alt={selectedPublication.imageTitle || 'publication image'} className='pubImage'/>
             <h1>{selectedPublication.title}</h1>
             <h2>{selectedPublication.subTitle}</h2>
             <p>{selectedPublication.article}</p>
