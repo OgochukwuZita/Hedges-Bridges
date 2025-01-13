@@ -1,8 +1,8 @@
 import React from 'react'
 import HeadSection from '../Components/HeadSection'
 import '../Styles/About.css'
-import Band from '../Components/Band'
 import Pointers from '../Components/Pointers'
+import BreakIcon from '../Components/BreakIcon'
 
 const About = () => {
   return (
@@ -37,7 +37,7 @@ const About = () => {
           </ul>
           <p className='last'>Our commitment is to deliver personalized, results-driven legal solutions, ensuring each client's unique needs are met with professionalism and care.</p>
         </div>
-        <Band />
+        <BreakIcon/>
         <div className='pointers'>
           <div className='mainTitle'>
             <Pointers title={'Explore Frequently Asked Questions'} to={'/Faq'} />

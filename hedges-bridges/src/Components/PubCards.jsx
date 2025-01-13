@@ -42,7 +42,7 @@ const PubCards = () => {
       ) : (
         <div className='pubCard'>
           {recentPublications.map((publication, index) => (
-            <div className='introCard' key={index}>
+            <div className='Card' key={index}>
               <h2 className='Title'>{publication.title}</h2>
               <ul className='details'>
                 <li className='date'>

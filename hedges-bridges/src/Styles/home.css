@@ -30,7 +30,7 @@ a {
 }
 
 .slideButton,
-.MoreBtn {
+.MoreBtn, .offerBtn {
     visibility: visible;
     width: 185px;
     height: 64px;

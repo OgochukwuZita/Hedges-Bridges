@@ -23,7 +23,7 @@
 }
 
 
-.introCard{
+.Card{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
     max-width: 320px;
     position: relative;
     background-color: #0D151C;
-    border: 1 px solid #0D151C;
+    border: 1px solid #0D151C;
     border-radius: 12px;
     padding: 8px 22px;
     overflow: hidden;
@@ -174,10 +174,18 @@ article p{
 
 }
 
+@media (max-width:1024px) {
+    .pubContainer{
+        margin-bottom: 80px;
+    }
+
+}
+
 @media (max-width:640px) {
     .pubCard{
         width: 520px;
     }
+
 }
 @media (max-width:560px) {
     .pubCard{
