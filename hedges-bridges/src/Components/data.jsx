@@ -1,4 +1,7 @@
 
+import slide1 from '../assets/slide1.jpg'
+import slide2 from '../assets/slide2.jpg'
+
   export const HedgesBridgesFAQs = [
     {
       id: 1,
@@ -179,3 +182,24 @@ const publications = [
 ];
 
 export default publications;
+
+export const properties = [
+  {
+    id: 1,
+    images: [slide1, slide2],
+    description: 'Spacious 3-bedroom apartment in a serene environment.',
+    price: '$150,000',
+  },
+  {
+    id: 2,
+    images: [slide1, slide2],
+    description: 'Spacious 3-bedroom apartment in a serene environment.',
+    price: '$150,000',
+  },
+  {
+    id: 3,
+    images: [slide1, slide2],
+    description: 'Spacious 3-bedroom apartment in a serene environment.',
+    price: '$150,000',
+  },
+];
