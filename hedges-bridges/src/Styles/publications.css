@@ -42,25 +42,25 @@
 
 .Title {
     padding-top: 25px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-align: center;
-    width: 180px;
-    height: 86px;
+     width: 100%;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: hidden; 
 
    
 }
 .Title, .pubContent p{
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -85,7 +85,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
     padding-bottom: 15px;
-    padding-top: 22px;
 }
 .date{
     display: flex;
@@ -149,7 +148,7 @@ article h2{
     padding-top: 15px;
 }
 article p{
-    text-align: justify;
+    text-align: left;
 }
 
 .mainDetails{

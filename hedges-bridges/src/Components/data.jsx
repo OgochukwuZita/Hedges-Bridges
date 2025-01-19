@@ -70,7 +70,7 @@ const publications = [
     id: 1,
     title: "The Evolution of Nigerian Corporate Law",
     introduction: "A look at how corporate law has shaped business practices in Nigeria.A look at how corporate law has shaped business practices in Nigeria.A look at how corporate law has shaped business practices in Nigeria.",
-    article: "Corporate law in Nigeria has evolved significantly over the past century...",
+    article: "Corporate law in Nigeria has evolved significantly over the past centuryffffffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggffffffffffffff...",
     author: "John Doe",
     date: "2024-12-10",
   },
@@ -186,20 +186,23 @@ export default publications;
 export const properties = [
   {
     id: 1,
-    images: [slide1, slide2],
+    images: [slide2, slide1],
     description: 'Spacious 3-bedroom apartment in a serene environment.',
+    location:'Lekki, Lagos',
     price: '$150,000',
   },
   {
     id: 2,
     images: [slide1, slide2],
-    description: 'Spacious 3-bedroom apartment in a serene environment.',
+    description: 'Spacious 3-bedroom apartment in a serene environment.fffffffffffffffffffffffffffffffffffffffffffffffffffff',
+    location:'Lejja, Enugu',
     price: '$150,000',
   },
   {
     id: 3,
     images: [slide1, slide2],
     description: 'Spacious 3-bedroom apartment in a serene environment.',
+    location: 'Gwarimpa, Abuja',
     price: '$150,000',
   },
 ];
