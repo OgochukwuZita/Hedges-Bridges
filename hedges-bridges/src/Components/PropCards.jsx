@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/properties.css";
+import '../Styles/Properties.css';
 import { properties } from "../Components/data";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { IoCallSharp } from "react-icons/io5";
