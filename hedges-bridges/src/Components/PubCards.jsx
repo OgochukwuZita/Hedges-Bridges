@@ -19,7 +19,7 @@ const PubCards = () => {
     <div className='pubContainer'>
       {selectedPublication ? (
         <div className='mainPublication'>
-          <ul className='details mainDetails'>
+          <ul className='detail mainDetails'>
             <li className='date'>
               <span className='dateIcon'><SlCalender/></span>
               <span><strong>{selectedPublication.date}</strong></span>
@@ -44,7 +44,7 @@ const PubCards = () => {
           {recentPublications.map((publication, index) => (
             <div className='Card' key={index}>
               <h2 className='Title'>{publication.title}</h2>
-              <ul className='details'>
+              <ul className='detail'>
                 <li className='date'>
                   <span className='dateIcon'><SlCalender/></span>
                   <span><strong>{publication.date}</strong></span>

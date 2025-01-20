@@ -71,7 +71,7 @@
     overflow: hidden;
 }
 
-.details{
+.detail{
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -214,10 +214,10 @@ article p{
     .details{
         padding-bottom: 18px;
     }
-    /* .pubImage{
+    .pubImage{
         width: 298px;
         height: 298px;
-    } */
+    } 
 }
 @media (max-width:320px) {
     .pubCard{
