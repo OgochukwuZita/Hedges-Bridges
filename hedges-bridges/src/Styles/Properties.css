@@ -53,7 +53,7 @@
     color: #0D151C;
 }
 
-button{
+.prevImage, .nextImage{
     all:unset;
     display: inline-block;
     font-size: 18px;
@@ -95,6 +95,13 @@ button{
 
 }
 
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
 .description p{
     color: #0D151C;
     padding-top: 11px;
