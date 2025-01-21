@@ -53,10 +53,13 @@
     color: #0D151C;
 }
 
-.prevImage, .nextImage{
+button{
     all:unset;
     display: inline-block;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btns{
     display: flex;
