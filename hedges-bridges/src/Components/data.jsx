@@ -187,7 +187,7 @@ export const properties = [
   {
     id: 1,
     images: [slide2, slide1],
-    description: 'Spacious 3-bedroom apartment in a serene environment.',
+    description: 'Spacious 3-bedroom apartment in a serene environment.gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg',
     location:'Lekki, Lagos',
     price: '$150,000',
   },

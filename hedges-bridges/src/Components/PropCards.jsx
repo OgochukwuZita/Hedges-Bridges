@@ -111,7 +111,7 @@ const PropCards = () => {
                       <MdOutlineEmail />
                     </span>
                     <a
-                      href="hedges.bridges@gmail.com"
+                      href="mailto: hedges.bridges@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
