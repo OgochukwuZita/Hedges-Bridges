@@ -70,7 +70,7 @@ a {
     margin-bottom: 120px;
 }
 
-/* .arrowRight {
+.arrowRight {
     font-size: 24px;
     color: #fece;
     width: 40px;
@@ -80,7 +80,7 @@ a {
     justify-content: center;
     align-items: center;
 }
- */
+ 
 @media (max-width:970px) {
     .pointers {
         margin-bottom: 0;

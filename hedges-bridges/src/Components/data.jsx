@@ -187,7 +187,7 @@ export const properties = [
   {
     id: 1,
     images: [slide2, slide1],
-    description: 'Spacious 3-bedroom apartment in a serene environment.gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg',
+    description: 'When a word is too long, the browser might break it at the wrong place. You can use the element to add word break opportunities.',
     location:'Lekki, Lagos',
     price: '$150,000',
   },

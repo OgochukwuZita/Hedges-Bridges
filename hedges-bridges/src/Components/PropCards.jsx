@@ -135,6 +135,7 @@ const PropCards = () => {
             <button className="imageViewerCloseBtn" onClick={closeImageViewer}>
               X
             </button>
+            
             <img
               src={
                 properties.find((prop) => prop.id === selectedImagePropertyId)
@@ -143,16 +144,8 @@ const PropCards = () => {
               alt="property view"
               className="imageViewerImage"
             />
-
-            <div className="description">
-              <p>
-                Description:{" "}
-                {
-                  properties.find(
-                    (prop) => prop.id === selectedImagePropertyId
-                  ).description
-                }
-              </p>
+            <div className="imageViewerDescription">
+              <p>Description:{''}{properties.find((prop)=>prop.id===selectedImagePropertyId).description}</p>
             </div>
             <div className="btns">
               <button className="prevImage" onClick={prevImage}>
@@ -163,6 +156,7 @@ const PropCards = () => {
               </button>
             </div>
           </div>
+
         </div>
       )}
     </div>
