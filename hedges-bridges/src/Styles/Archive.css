@@ -1,0 +1,28 @@
+.archiveCards{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 220px;
+    width: 100%;
+}
+
+.subCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+}
+
+.subCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fece;
+    border-radius: 8px;
+    padding: 22px;
+
+}
