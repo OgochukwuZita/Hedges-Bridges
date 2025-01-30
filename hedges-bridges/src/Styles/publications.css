@@ -111,7 +111,6 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: column;
     align-items: center;
     position: relative;
 }
@@ -130,6 +129,10 @@
     background-color: #a48d07;
 }
 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px 65px;
     text-align: justify;
 }

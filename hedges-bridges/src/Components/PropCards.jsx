@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../Styles/Properties.css';
 import { properties } from "../Components/data";
 import { GrNext, GrPrevious } from "react-icons/gr";
@@ -53,6 +53,18 @@ const PropCards = () => {
       prevIndex === 0 ? property.images.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(()=>{
+  const handleKeyDown = (e) => {
+    if(e.key==="ArrowLeft") prevImage();
+    if(e.key==="ArrowRight")nextImage();
+  };
+  document.addEventListener('keydown',handleKeyDown);
+  return()=>document.removeEventListener('keydown',handleKeyDown);
+
+  },[prevImage,nextImage]);
+
+
 
   return (
     <div className="propContainer">
@@ -148,10 +160,10 @@ const PropCards = () => {
               <p>Description:{''}{properties.find((prop)=>prop.id===selectedImagePropertyId).description}</p>
             </div>
             <div className="btns">
-              <button className="prevImage" onClick={prevImage}>
+              <button className="prevImage" onClick={prevImage} tabIndex={0}>
                 <GrPrevious />
               </button>
-              <button className="nextImage" onClick={nextImage}>
+              <button className="nextImage" onClick={nextImage} tabIndex={0}>
                 <GrNext />
               </button>
             </div>
