@@ -15,7 +15,7 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    gap: 18px;
+    gap: 22px;
 }
 
 .subCard{
@@ -39,4 +39,17 @@ align-items: center;
 margin:12px 0;
 margin-right: 38px;
 
+}
+
+@media(max-width:1048px){
+    .archiveCards{
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 380px){
+    .subCard{
+        width: 290px;
+        padding: 28px;
+    }
 }
