@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaSearch } from "react-icons/fa";
-import '../Styles/Search.css'
+import Find from '../Components/Find'
+
 const Search = () => {
   return (
     <div>
-      <div className='searchBar'>
-          search 
+      <div className='innerContainer'>
+        <Find/>
       </div>
     </div>
   )

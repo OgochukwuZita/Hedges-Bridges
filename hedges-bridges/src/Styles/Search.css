@@ -1,9 +1,20 @@
+.searchContainer{
+    background-color: #a48d07;
+    width: 100%;
+    height: fit-content;
+    padding: 12px;
+}
+
 .searchBar{
-    width:100%;
-    padding: 15px 5px;
-    height: 12vh;
-    border-bottom: 1px solid #ffe;
+    width:80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 8vh;
+    padding-left: 55px;
+    border-radius: 25px;
+    border: 1 px solid #fece;
+    margin-top: 8px;
+    margin-left: 5%;
+    
+   
 }

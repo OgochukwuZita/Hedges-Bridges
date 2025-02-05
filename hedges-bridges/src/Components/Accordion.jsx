@@ -17,10 +17,10 @@ const Accordion = ({data, titleKey, contentKey}) => {
         {
           data.map((item,index)=>(
             <div key={item.id} className='accordion-item'>
-              <button className='accordionTitle'onClick={()=>Toggle(index)}>
+              <p className='accordionTitle'onClick={()=>Toggle(index)}>
                 <span className='accordionTitle-text'>{item[titleKey]}</span>
                 <span className='toggleIcon' ><FaPlus /></span>
-              </button>
+              </p>
               {activeIndex === index && (<motion.div className='accordionContent' initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
               <p>{item[contentKey]}</p></motion.div>
             )}

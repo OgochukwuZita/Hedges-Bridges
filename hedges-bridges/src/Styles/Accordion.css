@@ -32,7 +32,7 @@
     flex:1;
 }
 
-.accordionContent{
+.accordionContent {
     margin-top:4px;
     width:680px;
     text-align: justify;
@@ -57,6 +57,7 @@
     font-size: 34px;
     color: #a48d07;
 }
+
 @media (max-width:800px) {
     .accordionTitle{
         width: 420px;
