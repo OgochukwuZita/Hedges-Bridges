@@ -206,3 +206,17 @@ export const properties = [
     price: '$150,000',
   },
 ];
+
+export const searchablePages = [
+  {id:1, name: "Home", path:"/Home'"},
+  {id:2, name: "About", path:"/About"},
+  {id:3, name: "Publications", path:"/Publications"},
+  {id:4, name: "Properties", path:"/Properties"},
+  {id:5, name: "Archive", path:"/Archive"},
+  {id:6, name: "FAQ", path:"/Faq"},
+  {id:7, name: "Contact", path:"/Contact"},
+  {id:8, name: "Services", path:"/Service"},
+  {id:9, name: "Testimonials", path:"/Testimonials"},
+  {id:10, name: "Company", path:"/About"},
+  {id:11, name: "Login", path:"/Login"}
+];
