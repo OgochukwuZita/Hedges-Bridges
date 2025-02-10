@@ -1,3 +1,8 @@
+.findContainer{
+    margin-bottom: 220px;
+
+}
+
 .searchContainer{
     background-color: #a48d07;
     width: 100%;
@@ -23,6 +28,17 @@
     text-align: center;
     color: #a48d07;
     letter-spacing: 2px;
+}
+
+.search-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 56px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #1d1d1d;
+
 }
 
 @media (max-width:1024) {

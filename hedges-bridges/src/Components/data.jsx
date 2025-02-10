@@ -208,7 +208,7 @@ export const properties = [
 ];
 
 export const searchablePages = [
-  {id:1, name: "Home", path:"/Home'"},
+  {id:1, name: "Home", path:"/Home"},
   {id:2, name: "About", path:"/About"},
   {id:3, name: "Publications", path:"/Publications"},
   {id:4, name: "Properties", path:"/Properties"},
