@@ -8,16 +8,23 @@ const Find = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredPages, setFilteredPages] = useState([]);
   const [filteredResults, setFilteredResults] = useState([]);
-  const navigate = useNavigate(); // ✅ FIXED
+  const navigate = useNavigate();
 
-  // Live search: Fetch results as user types
   useEffect(() => {
-    const fetchResults = async () => {
-      if (!searchQuery.trim()) {
-        setFilteredResults([]);
-        return;
-      }
+    if (!searchQuery.trim()) {
+      setFilteredPages([]); 
+      setFilteredResults([]); 
+      return;
+    }
 
+    //  case-insensitive matching
+    const regex = new RegExp(searchQuery, 'i'); 
+
+    const filtered = searchablePages.filter((page) => regex.test(page.name));
+    setFilteredPages(filtered);
+
+    // Fetch results from backend (debounced)
+    const fetchResults = async () => {
       try {
         const response = await fetch(`http://localhost:5000/search?q=${searchQuery}`);
         const data = await response.json();
@@ -27,18 +34,8 @@ const Find = () => {
       }
     };
 
-    const debounceTimer = setTimeout(() => {
-      fetchResults();
-    }, 300); // 🔹 Debounce to prevent excessive API calls
-
+    const debounceTimer = setTimeout(fetchResults, 300);
     return () => clearTimeout(debounceTimer);
-  }, [searchQuery]);
-
-  useEffect(() => {
-    const filtered = searchablePages.filter((page) =>
-      page.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    setFilteredPages(filtered);
   }, [searchQuery]);
 
   return (
@@ -50,13 +47,12 @@ const Find = () => {
             placeholder='Search for something...'
             className='searchBar'
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)} // 
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
       </div>
 
-      {/* Display search results live as user types */}
-      {(filteredPages.length > 0 || filteredResults.length > 0) && (
+      {(filteredPages.length > 0 || filteredResults.length > 0) ? (
         <div className="searchResults">
           {/* Static Page Matches */}
           {filteredPages.map((page) => (
@@ -80,11 +76,8 @@ const Find = () => {
             </div>
           ))}
         </div>
-      )}
-
-      {/* No Results Message */}
-      {filteredPages.length === 0 && filteredResults.length === 0 && searchQuery && (
-        <p>No results found</p>
+      ) : (
+        searchQuery && <p className="no-results">No result "{searchQuery}"</p>
       )}
     </div>
   );

@@ -40,6 +40,18 @@
     background-color: #1d1d1d;
 
 }
+.no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
 
 @media (max-width:1024) {
+    .findContainer{
+        margin-bottom: 15px;
+    }
+    .search-item{
+        margin: 12px 16px;
+    }
 }
