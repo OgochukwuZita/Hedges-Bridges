@@ -4,7 +4,7 @@ import BreakIcon from '../Components/BreakIcon';
 import { SlCalender } from "react-icons/sl";
 import publications from '../Components/data'
 import Pointers from '../Components/Pointers';
-import defaultImage from '../assets/slide1.jpg'
+import defaultImage from '../assets/publications.jpg';
 
 const PubCards = () => {
 

@@ -3,7 +3,7 @@ import { SlCalender } from "react-icons/sl";
 import '../Styles/Archive.css';
 import '../Styles/publications.css';
 import publications from '../Components/data'
-import defaultImage from '../assets/slide1.jpg'
+import defaultImage from '../assets/publications.jpg';
 
 
 const ArchiveCards = () => {

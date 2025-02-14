@@ -49,7 +49,7 @@
     margin-top:25px;
 }
 
-.contactForm input, textarea, .revForm textarea{
+.contactForm input, textarea, .revForm input, textarea{
     width: 600px;
     height: 56px;
     background-color: #0D151C;

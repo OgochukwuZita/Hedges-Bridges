@@ -1,0 +1,75 @@
+.CommentContainer{
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 32px;
+    margin-bottom: 220px;
+}
+
+.commentCard{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 8px;
+    position: relative;
+    border: 1px solid #efce;
+    border-radius: 12px;
+    background-color: #0D151C;
+
+}
+.commentCard p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 280px;
+
+}
+.commentCard .rating{
+    position: absolute;
+    left: 42px;
+    top: 56px;
+    font-size: 1.3rem;
+}
+.commentCard .Lquote{
+    position: absolute;
+    left: 18px;
+    top: 12px;
+}
+.commentCard .Rquote{
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+}
+.commentCard .name{
+    color:#a48d07;
+    position: absolute;
+    bottom: 56px;
+    right: 16px;
+}
+
+@media (max-width:700px) {
+    .CommentContainer{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    .commentCard{
+        width: 280px;
+        height: 320px;
+    }
+    .commentCard .rating{
+        top: 43px;
+    }
+    .commentCard .name{
+        bottom: 50px;
+    }
+}

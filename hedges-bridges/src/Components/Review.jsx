@@ -8,7 +8,7 @@ const Review = () => {
   const [formState, setFormState] = useState({succeded:false})
   const formRef = useRef(null);
 
-  const maxChar = 250;
+  const maxChar = 150;
 
   const handleSubmit = (e)=>{
     e.preventDefault();
@@ -30,8 +30,12 @@ const Review = () => {
     <div className="reviewForm">
       {formState.succeeded && <p className="successMsg">Thanks for your review.</p>}
       <form ref={formRef} onSubmit={handleSubmit}>
+        <div className='formField'>
+          <label htmlFor="name">Name:</label>
+          <input type="text" name="Name" id="Name" placeholder='Enter Your Name' required/>
+        </div>
         <div className="formField">
-        <label htmlFor='rating'>Rate Our Services</label>
+        <label htmlFor='rating'>Rate Our Services:</label>
         <select value={rating} id="rating" onChange={(e)=>setRating(e.target.value)} required>
           <option value="" disabled > Select a rating:</option>
           <option value="5">⭐⭐⭐⭐⭐</option>

@@ -9,8 +9,8 @@ const Properties = () => {
     <div className='content'>
     <HeadSection title={'Explore Properties'} description={"Find your ideal property with our curated listings of real estate for sale."}/>
     <div className='innerContainer'>
+    <PropCards/>
     </div>
-      <PropCards/>
     </div>
   )
 }
