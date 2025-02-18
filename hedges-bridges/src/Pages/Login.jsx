@@ -1,9 +1,20 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import PropertyForm from '../Components/PropertyForm'
+import PublicationsForm from '../Components/PublicationsForm'
+import LoginModal from '../Components/LoginModal'
+import '../Styles/Admin.css'
 
 const Login = () => {
   return (
-    <div><p> Go to <Link to='/Admin'> Admin </Link></p></div>
+    <div className='innerContainer'>
+        <h3>Hi Afam, Welcome To Your Admin Dashboard</h3>
+        <div className='content'>
+        <PublicationsForm/>
+        <PropertyForm/>
+        <LoginModal/>
+
+        </div>
+    </div>
   )
 }
 

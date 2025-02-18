@@ -36,7 +36,7 @@
     padding-right: 5px;
     border-bottom: 5px solid #a48d07;
 }
-.contactForm, reviewForm{
+.contactForm, .reviewForm,.form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
 .contactForm label{
     padding-top: 25px;
 }
-.revForm label, select{
+.reviewForm label, select{
     margin-top:25px;
 }
 
@@ -130,11 +130,14 @@
 }
 
 @media (max-width:425px) {
-    .contactForm .formField input, .revForm .formField select{
+    .contactForm .formField input, .reviewForm .formField select{
         width:285px
     }
 
-    .contactForm .formField textarea, .revForm .formField textarea{
+    .contactForm .formField textarea, .reviewForm .formField textarea{
+        width: 285px;
+    }
+    .reviewForm .formField input{
         width: 285px;
     }
 }
@@ -149,19 +152,22 @@
 
 
 @media (max-width:680px) {
-    .contactForm input, .revForm select{
+    .contactForm input, .reviewForm select{
         width: 380px;
     }
     
-    .formField textarea, .revForm textarea{
+    .formField textarea, .reviewForm textarea{
         width: 380px;
     }
+    .formField input{
+        width: 380px;
+     }
 
     
 }
 
 @media (max-width:1024px){
-    .revForm{
+    .reviewForm{
         padding-bottom:0;
     }
 
