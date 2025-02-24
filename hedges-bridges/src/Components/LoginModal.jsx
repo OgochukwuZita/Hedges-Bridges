@@ -5,7 +5,7 @@ const LoginModal = ({setIsLoggedIn}) => {
     const [error, setError] = useState("");
   
     const handleLogin = () => {
-      const correctPassword = "admin123"; // Change this when backend is ready
+      const correctPassword = "admin123"; 
       if (password === correctPassword) {
         setIsLoggedIn(true);
       } else {

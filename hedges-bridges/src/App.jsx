@@ -10,6 +10,7 @@ import Properties from "./Pages/Properties";
 import Publications from "./Pages/Publications";
 import Login from "./Pages/Login";
 import Admin from "./Pages/Admin";
+import Posts from "./Pages/Posts";
 import Archive from "./Pages/Archive"
 import './Styles/pages.css'
 import Footer from "./Footer/Footer";
@@ -35,6 +36,7 @@ function App() {
                         <Route path='/Login' element={<Login/>}/>
                         <Route path='/Admin' element={<Admin/>}/>
                         <Route path='/Archive' element={<Archive/>}/>
+                        <Route path='/Posts' element = {<Posts/>}/>
                     </Routes>
                 </main>
                 <Footer />

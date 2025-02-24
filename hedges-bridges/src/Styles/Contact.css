@@ -36,7 +36,7 @@
     padding-right: 5px;
     border-bottom: 5px solid #a48d07;
 }
-.contactForm, .reviewForm,.form-container{
+.contactForm, .reviewForm{
     display: flex;
     flex-direction: column;
     justify-content: center;

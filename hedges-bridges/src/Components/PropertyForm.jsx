@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+import Pointers from '../Components/Pointers'
+import '../Styles/Admin.css'
+
 
 const PropertyForm = () => {
   const [property, setProperty] = useState({
@@ -21,14 +24,33 @@ const PropertyForm = () => {
     console.log("Property Saved:", property);
   };
   return (
-    <form onSubmit={handleSubmit} className="form-container">
-      <h2>Manage Properties</h2>
-      <input type="file" multiple name="images" onChange={handleImageChange} />
-      <input type="text" name="price" placeholder="Price" onChange={handleChange} />
-      <input type="text" name="location" placeholder="Location" onChange={handleChange} />
-      <textarea name="description" placeholder="Description" onChange={handleChange} />
-      <button type="submit">Save</button>
+    <div className="Pform-container">
+    <form onSubmit={handleSubmit} >
+      <h2 className='admin-containerHeading'>Manage Properties</h2>
+      <div className='formField'>
+        <label htmlFor="images">Upload images:</label>
+        <input type="file" multiple name="images" onChange={handleImageChange} required/>
+      </div>
+      <div className='formField'>
+        <label htmlFor="price">Price:</label>
+      <input type="text" name="price" placeholder="Price" onChange={handleChange} required/>
+      </div>
+      <div className='formField'>
+        <label htmlFor="location">Location:</label>
+        <input type="text" name="location" placeholder="Location" onChange={handleChange} required/>
+      </div>
+      <div>
+        <label htmlFor="descriotion">Description:</label>
+      <textarea name="description" placeholder="Description" onChange={handleChange} required/>
+      </div>
+      <div className='btnContainer'>
+      <button type="submit" >Save</button>
+      </div>
     </form>
+    <div className='pointerContainer'>
+        <Pointers title={'Manage ALL Posts'} to={'/Posts'} />
+      </div>
+    </div>
   );
 };
 

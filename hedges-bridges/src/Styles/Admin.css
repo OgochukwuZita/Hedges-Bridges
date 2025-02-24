@@ -1,8 +1,17 @@
+
 .admin-container {
+    width: 100%;
+    height: 100%;
     padding: 20px;
+    margin-bottom: 220px;
   }
-  
-  /* Modal Styles */
+
+  .admin-containerHeading{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -38,16 +47,96 @@
     text-decoration: underline;
   }
   
+  .Welcome-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+    width: 100%;
+  }
   /* Forms */
-  .form-container {
+  .Pform-container {
     margin-top: 20px;
   }
   
-  .form-container input,
-  .form-container textarea {
+  .Pform-container input,
+  .Pform-container textarea {
     display: block;
     width: 100%;
     padding: 8px;
     margin: 10px 0;
   }
+  .Pform-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Pform-container label{
+    padding-top: 25px;
+    margin-left: 22px;
+    color: #fece;
+
+}
+
+.Pform-container input, textarea{
+    width: 600px;
+    height: 56px;
+    background-color: #0D151C;
+    border: 1px solid #887a2b;
+    border-radius: 15px;
+    color: #fece;
+    padding-left: 16px;
+}
+
+.pointerContainer{
+  margin-top: 55px;
+}
+
+.custom-editor {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width:425px) {
+  .PcontactForm .formField input{
+      width:285px
+  }
+
+  .pcontactForm .formField textarea{
+      width: 285px;
+  }
+  .custom-editor{
+    width: 285px;
+  }
+}
+
+
+@media (max-width:460px) {
+  .Welcome-msg{
+    text-align: center;
+  }
+}
+@media (max-width:680px) {
+  .PcontactForm input{
+      width: 380px;
+  }
   
+  .formField textarea{
+      width: 380px;
+  }
+  .formField input{
+      width: 380px;
+   }
+
+   .custom-editor{
+    width: 380px;
+   }
+
+   .admin-container{
+    margin-bottom: 8px;
+   }
+
+}
+
+
