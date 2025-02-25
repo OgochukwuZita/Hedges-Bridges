@@ -1,7 +1,7 @@
 import React from 'react'
 import PropertyForm from '../Components/PropertyForm'
 import PublicationsForm from '../Components/PublicationsForm'
-// import LoginModal from '../Components/LoginModal'
+import LoginModal from '../Components/LoginModal'
 import '../Styles/Admin.css'
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
         <div className='content'>
         <PublicationsForm/>
         <PropertyForm/>
-        {/* <LoginModal/> */}
+        <LoginModal/>
         </div>
     </div>
   )
