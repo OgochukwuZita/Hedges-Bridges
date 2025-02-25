@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import '../Styles/Admin.css'
-import { RichTextEditor } from "@mantine/rte";
 
 const PublicationsForm = () => {
   const [publication, setPublication] = useState({
@@ -25,18 +24,6 @@ const PublicationsForm = () => {
     console.log("Publication Saved:", publication);
   };
 
-  const handlePaste = (event)=>{
-    event.preventDefault();
-    const html=event.clipboardData.getData("text/html");
-    if(html){
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html,"text/html");
-      const formattedText = doc.body.innerText;
-      document.execCommand("insertText",false,formattedText)
-    }else {
-      document.execCommand("insertText",false,plainText)
-    }
-  }
   return (
     <div className="Pform-container">
       <form onSubmit={handleSubmit}>
@@ -67,43 +54,14 @@ const PublicationsForm = () => {
           <input type="file" name="image" onChange={handleFileChange} />
         </div>
 
-        {/* Replace textarea with RichTextEditor */}
         <div className="formField">
           <label htmlFor="fullArticle">Write Article:</label>
-          {/* <RichTextEditor value={publication.fullArticle} onChange={(value) => setPublication({ ...publication, fullArticle: value })} /> */}
-          <RichTextEditor
-  value={publication.fullArticle}
-  onChange={(value) => setPublication({ ...publication, fullArticle: value })}
-  onPaste={handlePaste}
-  className="custom-editor"
-  styles={{
-    root: {
-      width: "100%", 
-      maxWidth: "600px", 
-      borderRadius: "15px",
-      border: "1px solid #887a2b",
-      backgroundColor: "#0D151C",
-      color: "#fece",
-      overflow: "hidden", 
-    },
-    content: {
-      minHeight: "56px",
-      padding: "8px 16px", 
-      color: "#fece",
-      fontSize: "16px",
-      lineHeight: "1.5",
-      background: "transparent", 
-    },
-    toolbar: {
-      background: "#0D151C", 
-      borderBottom: "1px solid #887a2b",
-    },
-  }}
-/>
+          <textarea name="fullArticle" id="fullArticle" placeholder='Start writing your article here... (Use headings, paragraphs, and spacing for readability'></textarea>
+
         </div>
 
         <div className="btnContainer">
-          <button type="submit">Save</button>
+          <button type="submit">Publish</button>
         </div>
       </form>
     </div>
