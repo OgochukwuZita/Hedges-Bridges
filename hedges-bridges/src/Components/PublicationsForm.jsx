@@ -25,6 +25,18 @@ const PublicationsForm = () => {
     console.log("Publication Saved:", publication);
   };
 
+  const handlePaste = (event)=>{
+    event.preventDefault();
+    const html=event.clipboardData.getData("text/html");
+    if(html){
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html,"text/html");
+      const formattedText = doc.body.innerText;
+      document.execCommand("insertText",false,formattedText)
+    }else {
+      document.execCommand("insertText",false,plainText)
+    }
+  }
   return (
     <div className="Pform-container">
       <form onSubmit={handleSubmit}>
@@ -62,6 +74,7 @@ const PublicationsForm = () => {
           <RichTextEditor
   value={publication.fullArticle}
   onChange={(value) => setPublication({ ...publication, fullArticle: value })}
+  onPaste={handlePaste}
   className="custom-editor"
   styles={{
     root: {

@@ -2,7 +2,6 @@
 .admin-container {
     width: 100%;
     height: 100%;
-    padding: 20px;
     margin-bottom: 220px;
   }
 
@@ -47,13 +46,6 @@
     text-decoration: underline;
   }
   
-  .Welcome-msg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-wrap: wrap;
-    width: 100%;
-  }
   /* Forms */
   .Pform-container {
     margin-top: 20px;
@@ -94,19 +86,19 @@
 }
 
 .custom-editor {
-  width: 100%;
+  /* width: 100%; */
   max-width: 600px;
 }
 
 @media (max-width:425px) {
-  .PcontactForm .formField input{
+  .Pform-container .formField input{
       width:285px
   }
 
-  .pcontactForm .formField textarea{
+  .Pform-container .formField textarea{
       width: 285px;
   }
-  .custom-editor{
+  .Pform-container .custom-editor{
     width: 285px;
   }
 }
@@ -118,7 +110,7 @@
   }
 }
 @media (max-width:680px) {
-  .PcontactForm input{
+  .Pform-container input{
       width: 380px;
   }
   
