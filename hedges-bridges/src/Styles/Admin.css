@@ -84,7 +84,12 @@
 .pointerContainer{
   margin-top: 55px;
 }
-
+.modal-content .LoginBtn{
+  display: flex;
+  justify-content: center;
+  background-color: #887a2b;
+  padding: 5px;
+}
 
 @media (max-width:425px) {
   .Pform-container .formField input{

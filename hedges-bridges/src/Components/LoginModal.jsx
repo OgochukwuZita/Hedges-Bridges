@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import '../Styles/Admin.css'
 
 const LoginModal = ({setIsLoggedIn}) => {
     const [password, setPassword] = useState("");
@@ -27,7 +28,7 @@ const LoginModal = ({setIsLoggedIn}) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={handleLogin}>Login</button>
+            <button onClick={handleLogin} className='LoginBtn'>Login</button>
             <p className="forgot-password" onClick={handleForgotPassword}>
               Forgot Password?
             </p>
