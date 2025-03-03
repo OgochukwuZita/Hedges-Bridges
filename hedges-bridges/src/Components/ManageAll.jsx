@@ -3,6 +3,7 @@ import {useState} from "react"
 import publications from '../Components/data'
 import { properties } from '../Components/data'
 import '../Styles/ManageAll.css'
+import '../Styles/Properties.css'
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 
@@ -25,20 +26,20 @@ const ManageAll = () => {
     <div className='managaAll-container'>
       <section >
         <h3 className='admin-containerHeading'>Manage Publications</h3>
-        <div className='publications-section'>
+        <div className='publications-section cardContainer'>
         {Publications.length > 0 ? (
           publications.map((pub)=>(
-            <div key = {pub.id} className='item-card'> 
-              <h4>{pub.topic}</h4>
+            <div key = {pub.id} className='Card Ma-Card'> 
+              <h4 className='title'>{pub.title}</h4>
               <p> {pub.author}</p>
               <p>{pub.date} </p>
               <p>{pub.intro}</p>
               <div className='btn-container'>
                 <div className='ED-btns'>
               <button onClick={() => console.log(`Editing ${pub.id}`)}><CiEdit /></button>
-              <button onClick={() => handleDeletePublication(pub.id)}><MdOutlineDeleteOutline /></button>
+              <button onClick={() => handleDeletePublication(pub.id)} className='delete'><MdOutlineDeleteOutline /></button>
                 </div>
-              <button>Save</button>
+              <button className='Save'>Save</button>
               </div>
             </div>
 
@@ -54,16 +55,16 @@ const ManageAll = () => {
         <div className='properties-section'>
         {Properties.length > 0 ? (
           properties.map((prop) => (
-            <div key={prop.id} className="item-card">
+            <div key={prop.id} className="Card Ma-Card">
               <p>{prop.description}</p>
               <p>{prop.price}</p>
               <p>{prop.location}</p>
               <div className='btn-container'>
-                <div className='ED-btns'>
+              <div className='ED-btns'>
               <button onClick={() => console.log(`Editing ${prop.id}`)}><CiEdit /></button>
-              <button onClick={() => handleDeleteProperty(prop.id)}><MdOutlineDeleteOutline /></button>
+              <button onClick={() => handleDeleteProperty(prop.id)} className='delete'><MdOutlineDeleteOutline /></button>
                 </div>
-              <button>Save</button>
+              <button className='Save'>Save</button>
               </div>
             </div>
           ))

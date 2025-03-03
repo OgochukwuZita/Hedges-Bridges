@@ -31,8 +31,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 22px;
+    gap: 36px;
+    font-size: 32px;
+    
 }
+
+.ED-btns .delete{
+    color:#FF0000;
+}
+.Ma-Card{
+    height: 420px;
+}
+.title{
+    text-align: center;
+}
+.btn-container{
+    margin: 5px;;
+}
+
+.Save{
+    margin-top: 5px;
+    width: 108px;
+    padding: 10px 10px;
+    background-color: #a48d07;
+    border-radius: 15px;
+}
+
 @media (max-width:650px ) {
 .admin-containerHeading{
     display: none;

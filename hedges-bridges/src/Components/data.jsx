@@ -194,7 +194,7 @@ export const properties = [
   {
     id: 2,
     images: [slide1, slide2],
-    description: 'Spacious 3-bedroom apartment in a serene environment.fffffffffffffffffffffffffffffffffffffffffffffffffffff',
+    description: 'Spacious 3-bedroom apartment in a serene environment for living and cooking and breathing and and.',
     location:'Lejja, Enugu',
     price: '$150,000',
   },
