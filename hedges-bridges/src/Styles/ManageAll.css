@@ -1,0 +1,47 @@
+.managaAll-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    margin: 32px 55px 220px 55px;
+}
+.alt-ContainerHeading{
+    display: none;
+}
+
+.properties-section, .publications-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 32px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    
+}
+.ED-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+@media (max-width:650px ) {
+.admin-containerHeading{
+    display: none;
+}
+.alt-ContainerHeading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 56px;
+
+}
+}

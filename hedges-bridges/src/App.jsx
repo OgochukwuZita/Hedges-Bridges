@@ -9,7 +9,6 @@ import Testimonials from "./Pages/Testimonials";
 import Properties from "./Pages/Properties";
 import Publications from "./Pages/Publications";
 import Login from "./Pages/Login";
-import Admin from "./Pages/Admin";
 import Posts from "./Pages/Posts";
 import Archive from "./Pages/Archive"
 import './Styles/pages.css'
@@ -34,7 +33,6 @@ function App() {
                         <Route path='/Publications' element={<Publications/>}/>
                         <Route path='/Properties' element={<Properties/>}/>
                         <Route path='/Login' element={<Login/>}/>
-                        <Route path='/Admin' element={<Admin/>}/>
                         <Route path='/Archive' element={<Archive/>}/>
                         <Route path='/Posts' element = {<Posts/>}/>
                     </Routes>

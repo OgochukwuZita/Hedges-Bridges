@@ -65,7 +65,7 @@ import slide2 from '../assets/slide2.jpg'
     }
 ];
 
-const publications = [
+ const publications = [
   {
     id: 1,
     title: "The Evolution of Nigerian Corporate Law",
@@ -181,7 +181,7 @@ const publications = [
 },
 ];
 
-export default publications;
+export default publications
 
 export const properties = [
   {

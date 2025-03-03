@@ -4,6 +4,8 @@ import '../Styles/HeadSection.css'
 import '../Components/data'
 import Pointers from '../Components/Pointers'
 import BreakIcon from '../Components/BreakIcon'
+import '../Styles/services.css'
+import '../Styles/About.css'
 const Service = () => (
   <div className='content'>
     <div>
@@ -11,7 +13,7 @@ const Service = () => (
     </div>
     <div className='innerContainer'>
       <div className='aboutContent'>
-        <h2>Welcome to Hedges & Bridges Solicitors and Advocates (HBSA)</h2>
+        <h2 className='underlined'>Welcome to Hedges & Bridges Solicitors and Advocates (HBSA)</h2>
         <p>At HBSA, we are dedicated to delivering comprehensive legal solutions that meet the dynamic needs of businesses, individuals, and institutions. With a robust portfolio of specialized services, we are committed to excellence, precision, and innovation in addressing your legal and financial challenges. </p>
         <p>Explore our core services below:</p>
         <h2><strong className='underlined'>Corporate and Finance Services</strong></h2>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../Styles/publications.css';
 import BreakIcon from '../Components/BreakIcon';
 import { SlCalender } from "react-icons/sl";
-import publications from '../Components/data'
+import  publications from '../Components/data'
 import Pointers from '../Components/Pointers';
 import defaultImage from '../assets/publications.jpg';
 
