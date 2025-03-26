@@ -17,6 +17,12 @@ const LoginModal = ({setIsLoggedIn}) => {
     const handleForgotPassword = () => {
       alert("Password reset instructions have been sent to admin@example.com");
     };
+
+    const handleKeyDown =(e)=>{
+      if(e.key==='Enter'){
+        handleLogin();
+      }
+    }
     return (
         <div className="modal-overlay">
           <div className="modal-content">
@@ -27,6 +33,7 @@ const LoginModal = ({setIsLoggedIn}) => {
               placeholder="Enter password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
             <button onClick={handleLogin} className='LoginBtn'>Login</button>
             <p className="forgot-password" onClick={handleForgotPassword}>
