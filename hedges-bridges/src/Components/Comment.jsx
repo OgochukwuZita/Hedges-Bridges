@@ -1,18 +1,40 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../Styles/Testimonial.css';
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 
 const Comment = () => {
+  const [reviews, setReviews]=useState([]);
+    const BaseUrl = 'https://hedgesbridgesserver.onrender.com';
+
+    useEffect(()=>{
+      const fetchReviews = async ()=>{
+        try{
+          const response = await fetch(`${BaseUrl}/api/review`);
+          const data = await response.json();
+          setReviews(data);
+        } catch (error) {
+          console.error('Error fetching reviews:', error)
+        }
+      }
+      fetchReviews();
+    }, [])
+  
   return (
     <div className='CommentContainer'>
-      <div className='commentCard'>
+      {reviews.length === 0?(
+        <p>Loading Testimonials ...</p>
+      ):(
+        reviews.map((review)=>(
+      <div className='commentCard' key={review._id}>
         <FaQuoteLeft className='Lquote'/>
-        <span className='rating'>⭐⭐⭐⭐</span>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
-        <span className='name'>- Glory Obong</span>
+        <span className='rating'>{'⭐'.repeat(review.rating)}</span>
+        <p>{review.message}</p>
+        <span className='name'>- {review.name}</span>
         <FaQuoteRight className='Rquote'/>
       </div>
+      ))
+    )}
     </div>
   )
 }
